@@ -8,7 +8,7 @@ from PIL import Image
 from skimage.transform import resize
 
 app = Flask(__name__)
-LINE_CHANNEL_ACCESS_TOKEN = 'qHOkYDOx3Dk5SwMOaxTC8fAl/CBgaLHueQRp1fQ5zmY2U8mKz77IfMO11myhWMCQh1HGwbkt1LBnkUsLRBmda4/At99YfKHkajLjS6Fp4NOL8l0PIYvOXEcoTaKkxUcSD4zJcaRNZlipjErbbIIQdgdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_ACCESS_TOKEN = '6K5Ox1rBzCh1QqqDJ95COR+ppXZeCSyPUfJIZ6qjH/MCm2SgSQorkOkDqQeNwcGBctOgn2oggQ5SaGetOjsP3PLHSlzSQmxNx9YGotCM8duJp3swlBxtMaZcAmQCoPXhpjlFfuhuKf6yKdTCJZmKsAdB04t89/1O/w1cDnyilFU='
 
 
 def reply_message(reply_token, message):
@@ -36,7 +36,7 @@ def webhook():
             if event['type'] == 'message' and event['message']['type'] == 'text':
                 reply_token = event['replyToken']
                 user_message = event['message']['text']
-                reply_message(reply_token, f"You said: {user_message}")
+                reply_message(reply_token, f"ช่องแชทนี้ใช้สำหรับส่งรูปเท่านั้น")
 
             elif event['message']['type'] == 'image':
                 reply_token = event['replyToken']
