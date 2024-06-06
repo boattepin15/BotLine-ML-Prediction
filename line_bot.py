@@ -8,7 +8,7 @@ from PIL import Image
 from skimage.transform import resize
 
 app = Flask(__name__)
-LINE_CHANNEL_ACCESS_TOKEN = ''
+LINE_CHANNEL_ACCESS_TOKEN = 'qHOkYDOx3Dk5SwMOaxTC8fAl/CBgaLHueQRp1fQ5zmY2U8mKz77IfMO11myhWMCQh1HGwbkt1LBnkUsLRBmda4/At99YfKHkajLjS6Fp4NOL8l0PIYvOXEcoTaKkxUcSD4zJcaRNZlipjErbbIIQdgdB04t89/1O/w1cDnyilFU='
 
 
 def reply_message(reply_token, message):

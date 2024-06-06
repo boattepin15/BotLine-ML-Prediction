@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import joblib
 
-data_dir = 'D:\งานลูกค้า\Kp Kt\อ้อย'
+data_dir = 'D:\อ้อย'
 categories = os.listdir(data_dir)
 image_size = (64, 64)
 print(categories)
